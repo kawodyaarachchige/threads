@@ -16,6 +16,7 @@
         <module>lambda</module>
         <module>joinIsAlive</module>
         <module>threadPriority</module>
+        <module>synchronizedKeyword</module>
     </modules>
 
     <properties>

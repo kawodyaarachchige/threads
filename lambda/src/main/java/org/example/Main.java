@@ -1,21 +1,5 @@
 package org.example;
 
-
-class One implements Runnable{
-
-
-    @Override
-    public void run() {
-
-    }
-}
-class Two implements Runnable{
-
-    public void run() {
-
-    }
-}
-
 public class Main {
     public static void main(String[] args) {
 

@@ -36,7 +36,6 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-
         two.start();
         two.setPriority(Thread.MIN_PRIORITY);
 
