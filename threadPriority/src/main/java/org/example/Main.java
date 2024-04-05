@@ -24,18 +24,25 @@ public class Main {
                 }
             }
         });
+
         one.start();
+       // one.setName("Thread One");
+
         try {
             Thread.sleep(10);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        System.out.println("Thread one Status :" + one.isAlive());
+
+        System.out.println("Thread Name :" + one.getName());
+
         two.start();
+       // two.setName("Thread Two");
 
         one.join();
         two.join();
-        System.out.println("Thread one Status :" + one.isAlive());
+
+        System.out.println("Thread Name :" + two.getName());
         System.out.println("bye");
     }
 }

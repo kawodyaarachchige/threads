@@ -15,6 +15,7 @@
         <module>implmentRunnerble</module>
         <module>lambda</module>
         <module>joinIsAlive</module>
+        <module>threadPriority</module>
     </modules>
 
     <properties>
