@@ -14,6 +14,7 @@
         <module>extendThreadClass</module>
         <module>implmentRunnerble</module>
         <module>lambda</module>
+        <module>joinIsAlive</module>
     </modules>
 
     <properties>
