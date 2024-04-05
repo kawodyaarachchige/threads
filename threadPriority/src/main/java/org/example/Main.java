@@ -26,7 +26,9 @@ public class Main {
         });
 
         one.start();
-       // one.setName("Thread One");
+        one.setPriority(Thread.MAX_PRIORITY);
+
+        System.out.println("Thread Priority :" + one.getPriority());
 
         try {
             Thread.sleep(10);
@@ -34,15 +36,16 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        System.out.println("Thread Name :" + one.getName());
 
         two.start();
-       // two.setName("Thread Two");
+        two.setPriority(Thread.MIN_PRIORITY);
+
+        System.out.println("Thread Priority :" + two.getPriority());
 
         one.join();
         two.join();
 
-        System.out.println("Thread Name :" + two.getName());
-        System.out.println("bye");
+
+        System.out.println("Current Thread :"+ Thread.currentThread().getName());
     }
 }
